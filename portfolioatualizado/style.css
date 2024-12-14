@@ -1,0 +1,430 @@
+/* ===========================
+   Fonte e Estilos Básicos
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  line-height: 1.6;
+  
+}
+
+/* ===========================
+   Cabeçalho
+=========================== */
+header {
+  background-color: #1F1F1F;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #00ADB5;
+}
+
+header h1 {
+  color: #00ADB5;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #0dd3ff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #00FFB3;
+}
+
+/* ===========================
+   Seções Gerais
+=========================== */
+section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.section-container {
+  background-color: #1F1F1F;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  color: #00FFB3;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: 20px;
+  color: #CCCCCC;
+}
+
+
+/* ===========================
+   Sobre Mim
+=========================== */
+.profile-img {
+  width: 250px;
+  height: auto;
+  border-radius: 12%;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  display: block;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Projetos
+=========================== */
+.projects-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.project-item {
+  background-color: #252525;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.project-item:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.1s ease;
+}
+
+.project-item img {
+  width: 50px;
+  margin: 15px auto;
+  display: block;
+}
+
+.project-item h3 {
+  color: #00FFB3;
+  font-size: 0.5rem;
+  margin: 10px 0;
+}
+
+.project-item p {
+  color: #CCCCCC;
+  font-size: 0.1rem;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+.project-item a {
+  color: #00ADB5;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.project-item a:hover {
+  color: #FFFFFF;
+}
+
+.project-item span {
+  color: #00FFB3;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ===========================
+   Habilidades
+=========================== */
+.skills-list {
+  display: flex;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skill-item {
+  background-color: #00ADB5;
+  color: #121212;
+  padding: 5px 30px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.skill-item:hover {
+  background-color: #00FFB3;
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+/* ===========================
+   Certificados e Idiomas
+=========================== */
+.certificates ul, .languages ul {
+  list-style: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.certificates li, .languages li {
+  background-color: #252525;
+  color: #FFFFFF;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  margin: 10px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.certificates li:hover, .languages li:hover {
+  background-color: #00FFB3;
+  color: #121212;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Badges
+=========================== */
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.badge-item {
+  background-color: #252525;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.badge-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.badge-item:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.1s ease;
+}
+
+.badge-item img {
+  width: 100px;
+  margin: 15px auto;
+  display: block;
+}
+
+.badge-item h3 {
+  color: #00FFB3;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.badge-item p {
+  color: #CCCCCC;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.badge-item span {
+  color: #00FFB3;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* ===========================
+   Contato
+=========================== */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-icons a {
+  color: #0dd3ff;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact p{
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.contact-icons a:hover {
+  color: #00FFB3;
+  transform: scale(1.2);
+}
+
+/* ===========================
+   Rodapé
+=========================== */
+footer {
+  background-color: #1F1F1F;
+  padding: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border-top: 2px solid #00ADB5;
+}
+
+footer p {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ===========================
+   Responsividade
+=========================== */
+
+/* Smartphones */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: auto;
+  }
+
+  .certificates ul, .languages ul {
+    grid-template-columns: repeat(2,1fr);
+    
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile-img {
+    width: 240px;
+  }
+}
+
+/* Notebooks */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .profile-img {
+    width: 250px; 
+    height:auto;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  .project-item p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+  }
+
+  .badge-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .badge-item p{
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+}
+
+/* Telas maiores que 1440px */
+@media (min-width: 1441px) {
+  .profile-img {
+    width: 350px; 
+    height: auto;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+
+  .project-item p {
+    font-size: 1rem; 
+    line-height: 1.8; 
+  }
+}
+
+/* Ajuste geral para fontes */
+.project-item h3 {
+  font-size: 1.6rem; 
+}
+
+.project-item p {
+  font-size: 0.8rem; 
+}
+
+.profile-img {
+  margin: 0 auto; 
+}
+
+/* Telas maiores (para melhorar em desktop) */
+@media (min-width: 1025px) {
+  .contact-icons a {
+    font-size: 1.6rem;
+  }
+}
