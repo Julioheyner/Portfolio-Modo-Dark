@@ -115,7 +115,7 @@ p {
   gap: 20px;
 }
 
-.project-item {
+.projects-item {
   background-color: #252525;
   border-radius: 12px;
   overflow: hidden;
@@ -125,48 +125,48 @@ p {
   padding: 20px;
 }
 
-.project-item:hover {
+.projects-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
 }
 
-.project-item:active {
+.projects-item:active {
   transform: scale(0.95);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
   transition: transform 0.1s ease;
 }
 
-.project-item img {
+.projects-item img {
   width: 50px;
   margin: 15px auto;
   display: block;
 }
 
-.project-item h2 {
+.projects-item h2 {
   color: #00FFB3;
   font-size: 0.5rem;
   margin: 10px 0;
 }
 
-.project-item p {
+.projects-item p {
   color: #CCCCCC;
-  font-size: 3rem;
+  font-size: 1rem;
   line-height: 1;
   margin: 10px 0;
 }
 
-.project-item a {
+.projects-item a {
   color: #00ADB5;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.project-item a:hover {
+.projects-item a:hover {
   color: #FFFFFF;
 }
 
-.project-item span {
+.projects-item span {
   color: #00FFB3;
   font-weight: 600;
   font-size: 1rem;
